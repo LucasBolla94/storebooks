@@ -1,10 +1,10 @@
-const {codeBooks, marketBooks} = require('./books');
+const { codeBooks, marketBooks} = require('./books');
 
-function sortYear(list){
+function sortList(list){
     for(let i = 0; i < list.length; i++){
         let current = i;
         let prev = current - 1
-        while(current > 0 && list[current].year < list[prev].year){
+        while(current > 0 && list[current].price < list[prev].price){
             let cheapestBook = list[current];
             let currentBook = list[prev];
             list[current] = currentBook;
@@ -15,4 +15,4 @@ function sortYear(list){
     }
 }
 
-module.exports = sortYear;
+module.exports = sortList;
