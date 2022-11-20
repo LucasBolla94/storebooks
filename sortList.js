@@ -13,6 +13,8 @@ function sortList(list){
             prev = current - 1
         }
     }
+    console.log(`Here Books from cheapest to expansive`)
+    console.log(list)
 }
 
 module.exports = sortList;

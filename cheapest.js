@@ -7,7 +7,7 @@ function findCheapest(list){
             cheapest = current
         }
     }
-    console.log(cheapest)
+    console.log(`The Book Cheapest is ${list[cheapest].name}`)
 }
 
 module.exports = findCheapest;

@@ -13,6 +13,8 @@ function sortYear(list){
             prev = current - 1
         }
     }
+    console.log('List by Year from Oldest to Newest')
+    console.log(list)
 }
 
 module.exports = sortYear;
