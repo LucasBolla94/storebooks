@@ -4,6 +4,9 @@ const sortList = require('./sortList');
 const mergeList = require('./mergeList');
 const cheapest = require('./cheapest');
 
+console.log(codeBooks);
+console.log(marketBooks);
+
 cheapest(codeBooks);
 cheapest(marketBooks);
 

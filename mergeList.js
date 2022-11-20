@@ -15,14 +15,14 @@ function mergeList(list1,list2){
             indexBook2++
         }
     }
-    if(indexBook1 < list1.length){
+    if(indexBook1 <= list1.length){
         for(indexBook1; indexBook1 < list1.length; indexBook1++){
             newList.push(list1[indexBook1])
         }
     }
-    if(indexBook2 < list1.length){
-        for(indexBook2; indexBook1 < list1.length; indexBook2++){
-            newList.push(list1[indexBook2])
+    if(indexBook2 <= list2.length){
+        for(indexBook2; indexBook2 < list2.length; indexBook2++){
+            newList.push(list2[indexBook2])
         }
     }
     return newList
